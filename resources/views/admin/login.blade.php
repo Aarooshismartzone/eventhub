@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    @include('layouts/partials/head')
+    <title>Document</title>
+</head>
+
+<body style="font-family: 'montserrat', sans-serif;">
+    <div class="row w-100">
+        <div class="col-md-6 d-md-block d-none" style="height: 100%">
+            <img src="{{asset('images/loginleftimg.png')}}" class="left-img">
+            <h1 class="left-title">Welcome to<br>
+                Leisure Group Tech</h1>
+        </div>
+        <div class="col-md-6 loginright">
+            <h3 style="font-weight: 800;">Leisure Group Tech</h3>
+            @if (session('success'))
+                <span class="alert-success">{{ session('success') }}</span>
+            @elseif(session('error'))
+                <span class="alert-danger">{{ session('error') }}</span>
+            @endif
+            <div class="mt-4">
+                <span style="font-weight: 800; color: #07269B">Sign In</span>
+            </div>
+            <form method="post" action="{{url('/admin/loginchk')}}" class="mt-3" enctype= "multipart/form-data">
+                @csrf
+                <input type="email" name="email" id="" class="form-control mt-2" placeholder="Email/ Username">
+                <input type="password" name="password" id="" class="form-control mt-2" placeholder="Password">
+                <div class="text-end mt-3">
+                    <a class="lbl" style="color: #07269B; text-align: right">Forgot Password?</a>
+                </div>
+                <button type="submit" class="btn bluebutton-reg mt-3">Login</button>
+            </form>
+        </div>
+    </div>
+    <img src="{{asset('images/icons/arrow-mobile.png')}}" class="mt-2 belowarrow">
+</body>
+
+</html>

@@ -1,0 +1,14 @@
+/* .events-icon {
+    display: inline-block;
+    width: 32px;
+    height: 28px;
+    background-image: url('../images/icons/events.png');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+} */
+
+.nav-icon {
+    height: 24px;
+    width: 24px;
+    margin-right: 20px;
+}
