@@ -7,21 +7,22 @@
 </head>
 
 <body style="font-family: 'montserrat', sans-serif;">
+    <img src="{{ asset('images/eh_logo.png') }}" class="topleft">
     <div class="row w-100">
         <div class="col-md-6 d-md-block d-none" style="height: 100%">
-            <img src="{{asset('images/loginleftimg.png')}}" class="left-img">
-            <h1 class="left-title">Welcome to<br>
-                Leisure Group Tech</h1>
+            <img src="{{asset('images/loginleftimg.jpg')}}" class="left-img">
+            {{-- <h1 class="left-title">Welcome to<br>
+                Event Hub</h1> --}}
         </div>
         <div class="col-md-6 loginright">
-            <h3 style="font-weight: 800;">Leisure Group Tech</h3>
+            <h3 style="font-weight: 800; color: #FF5757">Admin Login</h3>
             @if (session('success'))
                 <span class="alert-success">{{ session('success') }}</span>
             @elseif(session('error'))
                 <span class="alert-danger">{{ session('error') }}</span>
             @endif
             <div class="mt-4">
-                <span style="font-weight: 800; color: #07269B">Sign In</span>
+                <span style="font-weight: 800; color: #545454">Sign In</span>
             </div>
             <form method="post" action="{{url('/admin/loginchk')}}" class="mt-3" enctype= "multipart/form-data">
                 @csrf
@@ -34,7 +35,7 @@
             </form>
         </div>
     </div>
-    <img src="{{asset('images/icons/arrow-mobile.png')}}" class="mt-2 belowarrow">
+    <img src="{{asset('images/eh_logo_name.png')}}" class="mt-2 belowarrow">
 </body>
 
 </html>

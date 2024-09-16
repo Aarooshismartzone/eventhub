@@ -487,6 +487,15 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 
 /* login */
 
+.topleft {
+    width: 150px;
+    height: auto;
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    opacity: 0.8;
+}
+
 .left-img {
     height: 100vh;
     width: 100%;
@@ -498,7 +507,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     position: absolute;
     left: 80px;
     top: 35%;
-    color: white
+    color: #545454
 }
 
 .loginright {
@@ -507,7 +516,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 }
 
 .bluebutton-reg {
-    background-color: #07269B;
+    background-color: #FF5757;
     padding-top: 5px;
     padding-bottom: 5px;
     padding-left: 25px;
