@@ -727,7 +727,7 @@ footer {
 }
 
 input .datepicker {
-	background-color: white; !important
+	background-color: white !important;
 }
 
 .cttl {
@@ -778,6 +778,14 @@ color: #FF6600;
     .filecard span {
         margin-left: 26%;
         margin-right: 26%;
+    }
+
+    .topleft {
+        height: auto;
+        position: relative;
+        margin-left: 10px;
+        margin-top: 10px;
+        opacity: 1;
     }
 
     .belowarrow {
@@ -914,10 +922,28 @@ color: #FF6600;
         padding: 50px;
     }
 
+    .belowarrow {
+        position: relative;
+        width: 80%; 
+        margin-left: 10%; 
+        margin-right: 10%;
+    }
+
+    .topleft {
+        width: 100px;
+    }
+
 }
 
 @media screen and (max-width: 300px) {
     .offcanvas {
         width: 200px;
+    }
+
+    .belowarrow {
+        position: absolute;
+        width: 80%; 
+        margin-left: 10%; 
+        bottom: 20px
     }
 }

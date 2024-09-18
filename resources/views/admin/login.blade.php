@@ -11,8 +11,6 @@
     <div class="row w-100">
         <div class="col-md-6 d-md-block d-none" style="height: 100%">
             <img src="{{asset('images/loginleftimg.jpg')}}" class="left-img">
-            {{-- <h1 class="left-title">Welcome to<br>
-                Event Hub</h1> --}}
         </div>
         <div class="col-md-6 loginright">
             <h3 style="font-weight: 800; color: #FF5757">Admin Login</h3>
